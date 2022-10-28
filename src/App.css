@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-sizing: border-box;
+flex-direction: column;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.App-link {
-  color: #61dafb;
+.data{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 50vw;
+height: 70vh;
+margin: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table{
+  width: 70vw;
+  height: auto;
+}
+table,th,td,tr{
+  text-align: center;
+  border-collapse: collapse;
+}
+tr{
+ color: black;
+ border-bottom: 2px solid rgba(0,0,0,0.2);
+ box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+ background-color: rgba(255,255,255,0.8);
+ font-size: 1em;
+}
+#thead{
+  font-size: 2em;
+  background-color: rgba(0,0,0,0.3);
+  margin: 2rem;
+}
+td{
+  padding: 0.7rem 4.4rem;
+  margin: 1rem;
+}
+h2{
+  font-size: 2em;
+}
+.status{
+  border: 1px solid gray;
+   padding: 0.4rem;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ img{
+  width: 0.8em;
+  height: auto;
+  padding: 1px;
+ }
+ .activetext{
+  color: black;
+ }
+ .inactivetext{
+  color: gray;
+ }
+tr:hover{
+  transform: translateY(-1px);
+  background-color: rgba(0,255,255,0.5);
 }
