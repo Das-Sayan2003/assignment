@@ -12,7 +12,7 @@ function App() {
     async function fetchData() {
       //fetch api response with async await
       const fetchedData = await axios.post(
-        "http://demo2211087.mockable.io/mock"
+        "https://demo2211087.mockable.io/mock"
       );
     
       //executing code according to statuscode of response
